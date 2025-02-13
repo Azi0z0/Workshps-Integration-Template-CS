@@ -1,0 +1,13 @@
+<h1> Ajouter un étudiant </h1>
+
+{{ form_start(f,{'attr': {'novalidate': 'novalidate'}} ) }}
+ <table>
+    <tr><td>{{form_label(f.nsc,"numero d'inscription")}}    </td>
+    <td>{{form_widget(f.nsc)}}</td>
+    <td>{{form_errors(f.nsc)}}    </td></tr>
+    <tr><td>{{form_label(f.email,"Email")}}</td>
+    <td>{{form_widget(f.email)}}</td>
+    <td>{{form_errors(f.email)}}</td></tr>
+</table>
+
+{{form_end(f)}}
